@@ -19,8 +19,11 @@
         "activityBarBadge.background": "#0c4c34",
         "activityBar.activeBorder": "#0c4c34",
         "statusBar.background": "#187f58",
+        "statusBar.noFolderBackground": "#187f58",
+        "statusBar.debuggingBackground": "#5b2e70",
+        "statusBarItem.remoteBackground": "#0c4c34",
         "titleBar.activeBackground": "#187f58",
-        "titleBar.activeForeground": "#C1CAD2"
+        "titleBar.activeForeground": "#C1CAD2",
     },
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.guides.bracketPairs": "active",
@@ -56,5 +59,8 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "cSpell.words": [
         "chromadb"
-    ]
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html",
+   }
 }
