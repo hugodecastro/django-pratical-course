@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "Djano Pratical Course"
+version = "0.1"
+authors = ["Hugo"]
+description = "Djano Pratical Course"
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.10.4, <3.12"
+django = "^5.0.3"
+pytest = "^8.1.1"
+pre-commit = "^3.6.2"
+black = "^24.2.0"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+bandit = "^1.7.8"
