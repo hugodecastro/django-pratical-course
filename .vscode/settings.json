@@ -21,7 +21,7 @@
         "statusBar.background": "#187f58",
         "statusBar.noFolderBackground": "#187f58",
         "statusBar.debuggingBackground": "#5b2e70",
-        "statusBarItem.remoteBackground": "#187f58",
+        "statusBarItem.remoteBackground": "#0c4c34",
         "titleBar.activeBackground": "#187f58",
         "titleBar.activeForeground": "#C1CAD2",
     },
