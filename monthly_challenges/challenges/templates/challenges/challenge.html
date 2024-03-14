@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>{{ month|title }}'s Challenge</h1>
-    <h2>{{ text }}</h2>
+    {% if text %}
+     <h2>{{ text }}</h2>
+    {% else %}
+     <h2>There is no challenge for this month!</h2>
+    {% endif %}
 </body>
 </html>
