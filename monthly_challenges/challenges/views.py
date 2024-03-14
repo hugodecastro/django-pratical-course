@@ -41,7 +41,7 @@ def monthly_challenge_by_number(request, month) -> HttpResponse:
 def monthly_challenge(request, month: str) -> HttpResponse:
     response_text: str = "<h1>This month is not supported!</h1>"
     try:
-        response_text: str = monthly_challenges[month]
+        response_text: str = monthly_challenges.get(month)
         return render(request, "challenges/challenge.html", {
             "month": month,
             "text": response_text
