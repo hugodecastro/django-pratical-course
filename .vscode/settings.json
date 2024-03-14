@@ -59,5 +59,8 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "cSpell.words": [
         "chromadb"
-    ]
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html",
+   }
 }
