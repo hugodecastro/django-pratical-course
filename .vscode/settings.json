@@ -1,66 +1,75 @@
 {
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestArgs": [
-        "tests",
-        "--cache-clear",
-        "--show-capture=all"
-    ],
-    "python.testing.autoTestDiscoverOnSaveEnabled": true,
-    "python.analysis.autoSearchPaths": true,
-    "python.analysis.enablePytestSupport": true,
-    "python.analysis.inlayHints.functionReturnTypes": true,
-    "python.analysis.inlayHints.variableTypes": true,
-    "python.analysis.inlayHints.pytestParameters": true,
-    "python.languageServer": "Pylance",
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#187f58",
-        "activityBar.foreground": "#C1CAD2",
-        "activityBarBadge.background": "#0c4c34",
-        "activityBar.activeBorder": "#0c4c34",
-        "statusBar.background": "#187f58",
-        "statusBar.noFolderBackground": "#187f58",
-        "statusBar.debuggingBackground": "#5b2e70",
-        "statusBarItem.remoteBackground": "#0c4c34",
-        "titleBar.activeBackground": "#187f58",
-        "titleBar.activeForeground": "#C1CAD2",
-    },
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.guides.bracketPairs": "active",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["task", "--cache-clear", "--show-capture=all"],
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.enablePytestSupport": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.languageServer": "Pylance",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#187f58",
+    "activityBar.foreground": "#C1CAD2",
+    "activityBarBadge.background": "#0c4c34",
+    "activityBar.activeBorder": "#0c4c34",
+    "statusBar.background": "#187f58",
+    "statusBar.noFolderBackground": "#187f58",
+    "statusBar.debuggingBackground": "#5b2e70",
+    "statusBarItem.remoteBackground": "#0c4c34",
+    "titleBar.activeBackground": "#187f58",
+    "titleBar.activeForeground": "#C1CAD2"
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "isort.args": ["--profile", "black"],
+  "editor.formatOnSave": true,
+  "workbench.list.smoothScrolling": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "python.testing.unittestArgs": ["-v", "-s", "-p", "tests.py"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-        "source.fixAll": "never",
-        "source.organizeImports": "explicit"
-    },
-    "workbench.list.smoothScrolling": true,
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "python.testing.unittestArgs": [
-        "-v",
-        "-s",
-        "./tests",
-        "-p",
-        "test_*.py"
-    ],
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
-    "python.analysis.autoFormatStrings": true,
-    "search.exclude": {
-        "**/.git": true,
-        "**/.github": true,
-        "**/*.md": true,
-        "**/.vscode": true,
-        "**/dist/**": true,
-        "**/logs": true,
-        "**/out/**": true,
-        "**/tmp": true,
-        "**/poetry.lock": true
-    },
-    "terminal.integrated.persistentSessionReviveProcess": "never",
-    "cSpell.words": [
-        "chromadb"
-    ],
-    "emmet.includeLanguages": {
-        "django-html": "html",
-   }
+      "source.organizeImports": "explicit"
+    }
+  },
+  "python.linting.banditArgs": [
+    "-r",
+    "--configfile",
+    "${workspaceFolder}/bandit.yaml"
+  ],
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "editor.largeFileOptimizations": false,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": "batisteo.vscode-django"
+  },
+  "python.analysis.autoFormatStrings": true,
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/*.md": true,
+    "**/.vscode": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/out/**": true,
+    "**/tmp": true,
+    "**/poetry.lock": true
+  },
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "cSpell.words": ["chromadb"],
+  "python.analysis.autoImportCompletions": false
 }
