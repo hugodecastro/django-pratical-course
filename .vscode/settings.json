@@ -1,14 +1,5 @@
 {
-  "python.testing.pytestEnabled": true,
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestArgs": ["task", "--cache-clear", "--show-capture=all"],
-  "python.testing.autoTestDiscoverOnSaveEnabled": true,
-  "python.analysis.autoSearchPaths": true,
-  "python.analysis.enablePytestSupport": true,
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.inlayHints.pytestParameters": true,
-  "python.languageServer": "Pylance",
+  // workbench settings
   "workbench.colorCustomizations": {
     "activityBar.background": "#187f58",
     "activityBar.foreground": "#C1CAD2",
@@ -21,17 +12,19 @@
     "titleBar.activeBackground": "#187f58",
     "titleBar.activeForeground": "#C1CAD2"
   },
+  "workbench.list.smoothScrolling": true,
+  // editor settings
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": "active",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
-  "isort.args": ["--profile", "black"],
   "editor.formatOnSave": true,
-  "workbench.list.smoothScrolling": true,
+  "editor.largeFileOptimizations": false,
+  // files settings
   "files.eol": "\n",
   "files.insertFinalNewline": true,
-  "python.testing.unittestArgs": ["-v", "-s", "-p", "tests.py"],
+  // python settings
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
@@ -43,21 +36,38 @@
     "--configfile",
     "${workspaceFolder}/bandit.yaml"
   ],
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.enablePytestSupport": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": false
+  // pytest settings
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["task", "--cache-clear", "--show-capture=all"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.unittestArgs": ["-v", "-s", "-p", "tests.py"],
+  //formatting settings
+  "isort.args": ["--profile", "black"],
+  // html settings
   "[html]": {
     "editor.suggest.insertMode": "replace",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "editor.largeFileOptimizations": false,
   "html.format.indentInnerHtml": true,
   "html.format.indentHandlebars": true,
+  // django settings
   "emmet.includeLanguages": {
     "django-html": "html"
   },
   "[django-html]": {
     "editor.defaultFormatter": "batisteo.vscode-django"
   },
-  "python.analysis.autoFormatStrings": true,
+  // search settings
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
@@ -69,7 +79,8 @@
     "**/tmp": true,
     "**/poetry.lock": true
   },
+  // terminal settings
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  // cspell settings
   "cSpell.words": ["chromadb"],
-  "python.analysis.autoImportCompletions": false
 }
